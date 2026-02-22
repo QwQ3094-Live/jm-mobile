@@ -33,9 +33,6 @@ fun CommonScaffold(
             val scrollBehavior =
                 TopAppBarDefaults.enterAlwaysScrollBehavior(rememberTopAppBarState())
             TopAppBar(
-                colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primary
-                ),
                 navigationIcon = {
                     IconButton(onClick = {
                         mainNavController.popBackStack()
