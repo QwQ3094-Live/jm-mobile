@@ -33,6 +33,9 @@ fun BottomNavigationBarComponent() {
                         contentDescription = "首页"
                     )
                 },
+                label = {
+                    Text("首页")
+                },
                 selected = currentRoute == "home",
                 onClick = {
                     navigate("home")
@@ -44,6 +47,9 @@ fun BottomNavigationBarComponent() {
                         painterResource(R.drawable.person_icon),
                         contentDescription = "个人中心"
                     )
+                },
+                label = {
+                    Text("个人中心")
                 },
                 selected = currentRoute == "user",
                 onClick = {
